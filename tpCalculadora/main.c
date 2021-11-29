@@ -7,11 +7,11 @@
 int main()
 {
     int A=0, B=0, opcion=0, resultado=0;
-    textcolor(RED);
+    /*textcolor(RED);
     textcolor(BLUE);
     textcolor(WHITE);
     textcolor(GREEN);
-
+*/
     printf("Menu de opciones");
 
 
