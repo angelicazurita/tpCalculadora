@@ -3,9 +3,9 @@ Programación I – Laboratorio I
 Trabajo práctico Nº 1
 
 #INTEGRANTES:
-#Angelica Zurita
-#Micaela Gomez
-#Romina Avari
+-Angelica Zurita / 
+-Micaela Gomez / 
+-Romina Avari.
 
 -----------------------------------------------------------------------------------------------
 Descripción
