@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1638222711 source:c:\users\angel\documents\github\tpcalculadora\tpcalculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1638222575 c:\users\angel\documents\github\tpcalculadora\tpcalculadora\funciones.h
+
+1638222675 source:c:\users\angel\documents\github\tpcalculadora\tpcalculadora\funciones.c
+
