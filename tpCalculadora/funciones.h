@@ -4,6 +4,8 @@
 
 //esta funcion muestra el menu
 void mostrarMenu();
+
+//funciones de calculo
 int calculaSUMA(int A,int  B);
 int calculaRESTA(int A,int  B);
 int calculaDIVISION(int A,int B);

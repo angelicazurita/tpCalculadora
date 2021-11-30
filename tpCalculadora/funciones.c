@@ -1,3 +1,5 @@
+
+
 void mostrarMenu(){
     printf("\n   1-SUMA \n");
     printf("   2-RESTA \n");
@@ -6,6 +8,8 @@ void mostrarMenu(){
     printf("   5-FACTORIAL \n");
     printf("   6-TODAS LAS OPERACIONES \n");
     printf("   7-SALIR \n");
+    printf("\n ELEGIR NUMERO DE OPERACION: \n");
+
 }
 
 // calcula la suma
