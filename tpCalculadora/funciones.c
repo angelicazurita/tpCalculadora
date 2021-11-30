@@ -1,6 +1,8 @@
 
 
-void mostrarMenu(){
+void mostrarMenu()
+{
+    printf("\n \n   MENU DE OPCIONES: \n");
     printf("\n   1-SUMA \n");
     printf("   2-RESTA \n");
     printf("   3-DIVISION \n");
@@ -8,74 +10,95 @@ void mostrarMenu(){
     printf("   5-FACTORIAL \n");
     printf("   6-TODAS LAS OPERACIONES \n");
     printf("   7-SALIR \n");
-    printf("\n ELEGIR NUMERO DE OPERACION: \n");
+    printf("\n ELEGIR NUMERO DE OPERACION:");
 
 }
 
-// calcula la suma
-int calculaSUMA(int A,int  B){
-    int suma = A + B;
-return suma;
+// 1 calcula la suma
+float calculaSUMA(float A,float  B)
+{
+    float suma = A + B;
+    return suma;
 }
 
-//4 Calcular la resta (A-B)\n");
+// 2 Calcular la resta (A-B)\n");
 
-int calculaRESTA(int A,int  B){
-    int resta = A - B;
-return resta;
+float calculaRESTA(float A,float  B)
+{
+    float resta = A - B;
+    return resta;
 }
 
-//5 Calcular la division (A/B)\n");
+// 3 Calcular la division (A/B)\n");
 
-int calculaDIVISION(int A,int  B){
-    int division = 0;
+float calculaDIVISION(float A,float  B)
+{
+    float division = 0;
     do
     {
-        printf("No es posible la division de un numero por cero \n Vuelva a ingresar ");
+        printf("No es posible la division de un numero por cero \n Vuelva a ingresar valor: \n");
         scanf("%d",&B);
 
-    }while(B == 0);
+    }
+    while(B == 0);
     division = (A / B);
-return division;
+    return division;
 }
 
-//6 Calcular la multiplicacion (A*B)\n");
+//4 Calcular la multiplicacion (A*B)\n");
 
-int calculaMULTIPLICACION(int A,int  B){
-    int multiplicacion = A * B;
-return multiplicacion;
+float calculaMULTIPLICACION(float A,float  B)
+{
+    float multiplicacion = A * B;
+    return multiplicacion;
 }
 
-//7 Calcular el factorial
-int calculaFACTORIAL(int A){
-int factorial = 1;
+//5 Calcular el factorial
+int calculaFACTORIAL(int A)
+{
+    int factorial = 1;
 
-for(int i = A; i > 0; i--){
-    factorial = factorial * i;
+    for(int i = A; i > 0; i--)
+    {
+        factorial = factorial * i;
+    }
+    return factorial;
 }
-return factorial;
-}
+//6 calcula todas las funciones
+void calculaYmuestraTODAS(float A,float B)
+{
+    float resultado=0;
+    if(B == 0)
+    {
+        resultado = calculaSUMA( A, B);
+        printf(" SUMA: %f \n", resultado);
+        resultado= calculaRESTA( A,  B);
+        printf(" RESTA: %f\n", resultado);
+        resultado= calculaMULTIPLICACION( A, B);
+        printf(" MULTIPLICACION: %f\n", resultado);
+        printf(" No es posible la division por 0. \n");
+    }
+    else
+    {
+        resultado = calculaSUMA( A, B);
+        printf("\n SUMA: %.1f + %.1f = %.1f",A,B, resultado);
 
-void calculaYmuestraTODAS(int A,int B){
-int resultado=0;
-if(B == 0){
-resultado = calculaSUMA( A, B);
-printf("SUMA: %d \n", resultado);
-resultado= calculaRESTA( A,  B);
-printf("RESTA: %d\n", resultado);
-resultado= calculaMULTIPLICACION( A, B);
-printf("MULTIPLICACION: %d\n", resultado);
-printf("No es posible la division por 0 \n");
-}else{
-    resultado = calculaSUMA( A, B);
-    printf("SUMA: %d", resultado);
-    resultado= calculaRESTA( A,  B);
-    printf("\nRESTA: %d", resultado);
-    resultado= calculaMULTIPLICACION( A, B);
-    printf("\nMULTIPLICACION: %d", resultado);
-    resultado= A/B;
-    printf("\nDIVISION: %d", resultado);
-}
+        resultado= calculaRESTA( A,  B);
+        printf("\n RESTA: %.1f - %.1f = %.1f",A,B, resultado);
 
-return;
+        resultado= calculaMULTIPLICACION( A, B);
+        printf("\n MULTIPLICACION: %.1f x %.1f = %.1f",A,B, resultado);
+
+        resultado= A/B;
+        printf("\n DIVISION: %.1f / %.1f = %.1f",A, B, resultado);
+
+        //printf("\n Ingrese un numero para factorial: \n");
+        //scanf("%d", &A);
+
+        resultado= calculaFACTORIAL (A);
+       // printf("\n FACTORIAL %d= %d", A, resultado);
+        printf("\n El factorial de %.0f es: %.0f ",A,resultado);
+    }
+
+    return;
 }

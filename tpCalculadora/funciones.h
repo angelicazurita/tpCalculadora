@@ -6,10 +6,10 @@
 void mostrarMenu();
 
 //funciones de calculo
-int calculaSUMA(int A,int  B);
-int calculaRESTA(int A,int  B);
-int calculaDIVISION(int A,int B);
-int calculaMULTIPLICACION(int A,int B);
+float calculaSUMA(float A,float  B);
+float calculaRESTA(float A,float  B);
+float calculaDIVISION(float A,float B);
+float calculaMULTIPLICACION(float A,float B);
 int calculaFACTORIAL(int A);
-void calculaYmuestraTODAS(int A,int B);
+void calculaYmuestraTODAS(float A,float B);
 #endif // FUNCIONES_H_INCLUDED

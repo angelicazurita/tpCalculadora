@@ -2,18 +2,18 @@
 #include <stdlib.h>
 #include<conio.h>
 #include "funciones.h"
+#include <windows.h>
 
 
 int main()
 {
-    int A=0, B=0, opcion=0, resultado=0;
-    /*textcolor(RED);
-    textcolor(BLUE);
-    textcolor(WHITE);
-    textcolor(GREEN);
-    */
+    float A=0, B=0, resultado=0;
+    int opcion=0;
+
     system ("cls");
-    printf("MENU DE OPCIONES: \n\n");
+    printf("\033[1;33m");
+    printf(" \n         CALCULADORA: \n");
+    printf("\033[0m");
 
 
     while(opcion != 7)
@@ -26,52 +26,52 @@ int main()
         case 1 :
             system("cls");
             printf("Ingrese primer operando\n");
-            scanf("%d",&A);
+            scanf("%f",&A);
             printf("Ingrese segundo operando\n");
-            scanf("%d",&B);
+            scanf("%f",&B);
             resultado= calculaSUMA(A, B);
-            printf("El resultado es: %d ",resultado);
+            printf("%.1f + %.1f es: %.1f ",A,B, resultado);
             break;
         case 2 :
             system ("cls");
             printf("Ingrese primer operando\n");
-            scanf("%d",&A);
+            scanf("%f",&A);
             printf("Ingrese segundo operando\n");
-            scanf("%d",&B);
+            scanf("%f",&B);
             resultado =calculaRESTA(A, B);
-            printf("resta: %d ",resultado);
+            printf("%.1f - %.1f es: %.1f ",A,B,resultado);
             break;
         case 3 :
             system("cls");
             printf("Ingrese primer operando\n");
-            scanf("%d",&A);
+            scanf("%f",&A);
             printf("Ingrese segundo operando\n");
-            scanf("%d",&B);
+            scanf("%f",&B);
             resultado =calculaDIVISION(A,B);
-            printf("division: %d ",resultado);
+            printf("%.1f / %.1f es: %.1f ",A,B,resultado);
             break;
         case 4 :
             system("cls");
             printf("Ingrese primer operando\n");
-            scanf("%d",&A);
+            scanf("%f",&A);
             printf("Ingrese segundo operando\n");
-            scanf("%d",&B);
+            scanf("%f",&B);
             resultado=calculaMULTIPLICACION(A, B);
-            printf("multiplicacion: %d ",resultado);
+            printf("%.1f x %.1f: %.1f ",A,B,resultado);
             break;
         case 5 :
             system ("cls");
             printf("Ingrese numero\n");
-            scanf("%d",&A);
-            resultado= calculaFACTORIAL(A );
-            printf("factorial: %d ",resultado);
+            scanf("%f",&A);
+            resultado= calculaFACTORIAL(A);
+            printf("El factorial de %.0f es: %.0f ",A,resultado);
             break;
         case 6 :
             system ("cls");
             printf("Ingrese primer operando\n");
-            scanf("%d",&A);
+            scanf("%f",&A);
             printf("Ingrese segundo operando\n");
-            scanf("%d",&B);
+            scanf("%f",&B);
             calculaYmuestraTODAS(A, B);
 
             break;
