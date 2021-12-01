@@ -64,12 +64,17 @@ int calculaFACTORIAL(int A)
 {
     int factorial;
 
-    if(A <1 ){
+    if(A <1 )
+    {
         return 0;
-    }else if(A == 1){
-    return 1;
-    }else{
-    return A*calculaFACTORIAL(A-1);
+    }
+    else if(A == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return A*calculaFACTORIAL(A-1);
     }
     return factorial;
 }
@@ -110,11 +115,15 @@ void calculaYmuestraTODAS(float A,float B)
 }
 
 
-int validaRango(int A ){
-  if ( A >=0 && A <= 31){
-    return 1;
-  }else{
- return 0;
-  }
+int validaRango(int A )
+{
+    if ( A >=0 && A <= 31)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 
 }
