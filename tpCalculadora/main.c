@@ -10,7 +10,11 @@ int main()
     float A=0, B=0, resultado=0;
     int opcion=0;
 
+<<<<<<< HEAD
      system ("cls");
+=======
+    system ("cls");
+>>>>>>> d2101d1e21155361a019056fbd376e7448f75d9a
     system("color 4E");
     printf("   ______   _____   __       ______   __  __   __       _____   _____    _____   _____    _____  \n");
     printf("  |   ___| |  _  | |  |     |   ___| | |  | | |  |     |  _  | |     |  |  _  | |  _  |  |  _  | \n");
@@ -83,7 +87,11 @@ int main()
 
         default:
             printf("Valor ingresado fuera de rango. Volver a ingresar: ");
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> d2101d1e21155361a019056fbd376e7448f75d9a
         }
     }
     return 0;
