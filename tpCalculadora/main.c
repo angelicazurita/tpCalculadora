@@ -81,7 +81,7 @@ int main()
         default:
             printf("Valor ingresado fuera de rango. Volver a ingresar: ");
             printf("hola");
-
+            printf("chau");
         }
     }
     return 0;
