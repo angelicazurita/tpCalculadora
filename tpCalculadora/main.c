@@ -11,9 +11,12 @@ int main()
     int opcion=0;
 
     system ("cls");
-    printf("\033[1;33m");
-    printf(" \n         CALCULADORA: \n");
-    printf("\033[0m");
+    system("color 4E");
+    printf("   ______   _____   __       ______   __  __   __       _____   _____    _____   _____    _____  \n");
+    printf("  |   ___| |  _  | |  |     |   ___| | |  | | |  |     |  _  | |     |  |  _  | |  _  |  |  _  | \n");
+    printf("  |  |     |  _  | |  |     |  |     | |__| | |  |     |  _  | |  ||  | | | | | |   __|  |  _  | \n");
+    printf("  |  |___  | | | | |  |___  |  |___  |      | |  |___  | | | | |  ||  | | |_| | |  _ |   | | | | \n");
+    printf("  |______| |_| |_| |______| |______| |______| |______| |_| |_| |_____/  |_____| |_| |_|  |_| |_| \n");
 
 
     while(opcion != 7)
@@ -80,8 +83,7 @@ int main()
 
         default:
             printf("Valor ingresado fuera de rango. Volver a ingresar: ");
-            printf("hola");
-            printf("chau");
+            
         }
     }
     return 0;
