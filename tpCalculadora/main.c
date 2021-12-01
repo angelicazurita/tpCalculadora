@@ -10,10 +10,13 @@ int main()
     float A=0, B=0, resultado=0;
     int opcion=0;
 
-    system ("cls");
-    printf("\033[1;33m");
-    printf(" \n         CALCULADORA: \n");
-    printf("\033[0m");
+     system ("cls");
+    system("color 4E");
+    printf("   ______   _____   __       ______   __  __   __       _____   _____    _____   _____    _____  \n");
+    printf("  |   ___| |  _  | |  |     |   ___| | |  | | |  |     |  _  | |     |  |  _  | |  _  |  |  _  | \n");
+    printf("  |  |     |  _  | |  |     |  |     | |__| | |  |     |  _  | |  ||  | | | | | |   __|  |  _  | \n");
+    printf("  |  |___  | | | | |  |___  |  |___  |      | |  |___  | | | | |  ||  | | |_| | |  _ |   | | | | \n");
+    printf("  |______| |_| |_| |______| |______| |______| |______| |_| |_| |_____/  |_____| |_| |_|  |_| |_| \n");
 
 
     while(opcion != 7)
@@ -25,21 +28,21 @@ int main()
         {
         case 1 :
             system("cls");
-            printf("Ingrese primer operando\n");
-            scanf("%f",&A);
-            printf("Ingrese segundo operando\n");
-            scanf("%f",&B);
+            printf("  Ingrese primer operando\n");
+            scanf("   %f",&A);
+            printf("  Ingrese segundo operando\n");
+            scanf("   %f",&B);
             resultado= calculaSUMA(A, B);
-            printf("%.1f + %.1f es: %.1f ",A,B, resultado);
+            printf("%.0f + %.0f es: %.0f ",A,B, resultado);
             break;
         case 2 :
             system ("cls");
-            printf("Ingrese primer operando\n");
-            scanf("%f",&A);
-            printf("Ingrese segundo operando\n");
-            scanf("%f",&B);
+            printf("  Ingrese primer operando\n");
+            scanf("   %f",&A);
+            printf("  Ingrese segundo operando\n");
+            scanf("   %f",&B);
             resultado =calculaRESTA(A, B);
-            printf("%.1f - %.1f es: %.1f ",A,B,resultado);
+            printf("   %.0f - %.0f es: %.0f ",A,B,resultado);
             break;
         case 3 :
             system("cls");
@@ -57,7 +60,7 @@ int main()
             printf("Ingrese segundo operando\n");
             scanf("%f",&B);
             resultado=calculaMULTIPLICACION(A, B);
-            printf("%.1f x %.1f: %.1f ",A,B,resultado);
+            printf("%.0f x %.0f: %.0f ",A,B,resultado);
             break;
         case 5 :
             system ("cls");
@@ -80,7 +83,6 @@ int main()
 
         default:
             printf("Valor ingresado fuera de rango. Volver a ingresar: ");
-            printf("hola");
 
         }
     }
