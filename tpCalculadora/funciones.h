@@ -11,4 +11,5 @@ float calculaDIVISION(float A,float B);
 float calculaMULTIPLICACION(float A,float B);
 int calculaFACTORIAL(int A);
 void calculaYmuestraTODAS(float A,float B);
+int validaRango(int A);
 #endif // FUNCIONES_H_INCLUDED
