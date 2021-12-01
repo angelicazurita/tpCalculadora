@@ -7,7 +7,7 @@
 
 int main()
 {
-   float A=0, B=0, resultado=0, num=0;
+    float A=0, B=0, resultado=0, num=0;
     int opcion=0;
 
     system ("cls");
@@ -107,22 +107,25 @@ int main()
         case 5 :
             system ("cls");
             system("color 3D");
-             printf("                                           +---------------------------+\n");
+            printf("                                           +---------------------------+\n");
             printf("                                           ¦          Factorial        ¦\n");
             printf("                                           +---------------------------+\n");
             printf("\n                                           Ingrese numero ( del 0 al 31) = ");
             scanf("%f",&A);
-            if( validaRango(A) == 1){
-            resultado= calculaFACTORIAL(A);
-            printf("\n\n\n                                           +---------------------------+\n");
-            printf("                                              El factorial de %.0f es: %.0f\n",A, resultado);
-            printf("                                           +---------------------------+\n");
-            system("color 3D");
-            printf("\n");
-            }else{
-            printf("\n\n                                           Valor fuera de rango");
+            if( validaRango(A) == 1)
+            {
+                resultado= calculaFACTORIAL(A);
+                printf("\n\n\n                                           +---------------------------+\n");
+                printf("                                              El factorial de %.0f es: %.0f\n",A, resultado);
+                printf("                                           +---------------------------+\n");
+                system("color 3D");
+                printf("\n");
             }
-             printf("\n");
+            else
+            {
+                printf("\n\n                                           Valor fuera de rango");
+            }
+            printf("\n");
 
             break;
         case 6 :
